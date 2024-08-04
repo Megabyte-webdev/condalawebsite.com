@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Condala Shopping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="condala.css">
+
+</head>
+<body>
+
+    <div class="marketing-bar">
+        <p class="active">
+            Free delivery on all orders above 50k.<span>Shop Now</span>
+        </p>
+    </div>
+
+    <div class="icons">
+
+        <i class="menu-bar">
+            <div id="menu-toggle" class="menu-toggle active-element" onclick="toggle()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+        </i>
+
+        <img src="condala-images/condala-main-logo.png" class="logo" />
+
+        <i class="love" title="love">
+            <!-- SVG SOURCE-->
+            <svg width="0" height="0" style="position: absolute; margin-left: -100%;">
+
+                <path id="heart-icon" d=" M16,28.261c0,0 -14-7.926 -14 -17.046c0 -9.356, 13.159 -10.399, 14 -0.454c1.011 -9.938, 14-8.903, 14, 0.454C30,20.335,16,28.261,16,28.261z" />
+            </svg>
+            <!-- SVG SOURCE END -->
+            <svg class="icon" width="24" height="24" fill="none" stroke="currentColor" style="stroke-linejoin: round;stroke-linecap: round; " viewbox="0 0 32 32">
+                <use xlink:href="#heart-icon"></use>
+            </svg>
+        </i>
+        <i class="chat" title="chat" >
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" style="stroke-linejoin: round; stroke-linecap: round; ">
+                <circle cx="12"cy="6" r="4" />
+                <path d="M7 14H17a 14 7 0 0 1 3 7M7 14a 14 7 1 0 0 -3 7" />
+            </svg>
+        </i>
+        <i class="shop" title="shop"><svg fill="none" width="24" height="24" stroke="currentColor" style="stroke-linejoin: round;stroke-linecap: round; " viewBox="0 0 24 24">
+
+            <path d="M8 6H20a 2 2 0 0 1 2 2L20 18a 2 2 0 0 1 -2 2H12 a 2 2 0 0 1 -2 -2L8 6M8 6L6 2H2" />
+
+            <circle cx="12" cy="22" r=".5" />
+            <circle cx="18" cy="22" r=".5" />
+        </svg></i>
+        <i class="more" title="more">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" stroke="none">
+                <circle cx="12"cy="4" r="2.5" />
+                <circle cx="12"cy="12" r="2.5" />
+                <circle cx="12"cy="20" r="2.5" />
+            </svg>
+        </i>
+
+    </div>
+    <div class="location">
+
+        <h2>Location </h2>
+        <p>
+            Kampala, Uganda
+        </p>
+
+    </div>
+    <div class="nav">
+
+        <a href=""> Home  </a>
+        <a href=""> Men  </a>
+        <a href=""> Women  </a>
+        <a href=""> Fashion  </a>
+        <a href=""> Electronic  </a>
+        <a href=""> Gadgets  </a>
+
+    </div>
+
+    <div class="search-bar">
+        <i class="search-icon"> 
+			<svg width="18" height="18" stroke="currentColor" fill="transparent" style="stroke-width: 2" viewBox="0 0 24 24">
+                 <circle cx="10" cy="10" r="9" />
+                 <path d="m 17 17 l 5 5" />
+
+			</svg>
+						
+		</i>
+        <input type="text" Id="search" placeholder="Search for products" />
+        <i class="camera">
+<svg viewBox="0 0 24 24" width="24" height="24" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor"  fill="transparent" stroke-width="1">
+ <path d=" M 2 8 H 8 L 10 6L14 6L 16 8H22V20H2Z"/>
+ <path d=" M 10.5 8h3v2h-3z" />
+ <path fill="currentColor" d="M19 8C 19 5, 21 5, 21 8" />
+ <path d=" M 12.2 14a1.2 1.2 1 0 0 -1.2 1.2" class="roto"/>
+<circle cx="12" cy="15" r="3" class="snap"/>
+ </svg>
+</i>
+        <i class="voice">
+		<svg viewBox="0 0 24 24" stroke="currentColor" width="24" fill="transparent" height="24">
+		<path class="round" fill="none" d="M8 12L8 4A 5 5 0 0 1 16 4L16 12A 5 5 0 0 1 8 12" />
+		<path id="speaker2" d="M4 8A 5 5 0 0 0 20 8M12 16V22M8 22H16" /> 
+		</svg>
+		</i>
+    </div>
+
+    <div class="slider">
+        <svg id="loader" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"> <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle> </svg>
+
+        <div class="slide">
+            <h1> ONE TIME Sales </h1>
+            <p>
+                Get up to 50%  Discount for any item you buy
+            </p>
+            <button Id="shop-btn">Shop Now </button>
+        </div>
+
+        <div class="slide">
+            <h1> Flash  Sales </h1>
+            <p>
+                Get up to 70%  Discount for any item you buy
+            </p>
+            <button Id="shop-btn">Shop Now </button>
+        </div>
+
+        <div class="slide">
+            <h1> Flash  Sales </h1>
+            <p>
+                Get up to 80%  Discount for any item you buy
+            </p>
+            <button Id="shop-btn">Shop Now </button>
+        </div>
+
+        <div class="slide"></div>
+
+        <div class="slide"></div>
+
+        <div class="slide"></div>
+
+        <div class="slide"></div>
+
+
+
+        <div Id="controls">
+
+
+            <span class="prev" onclick="PrevSlide()"> &#10094;</span>
+            <span class="next" onclick="NextSlide()">&#10095;</span>
+        </div>
+
+        <div class="link">
+            <!--implemented from js-->
+        </div>
+    </div>
+
+    <div class="category">
+        <h2> Categories </h2>
+        <div class="category-sections">
+            <section>
+                <img src="condala-images/iphone.jpeg" />
+                <p>Phones</p>
+            </section>
+
+            <section>
+                <img src="condala-images/tvset.png" />
+                <p>Tvset</p>
+            </section>
+
+            <section>
+                <img src="condala-images/shoe.jpg" />
+                <p>Shoes</p>
+            </section>
+
+            <section>
+                <img src="condala-images/generator.jpg" />
+                <p>Generators</p>
+            </section>
+
+            <section>
+                <img src="condala-images/gown.png" />
+                <p>Gown</p>
+            </section>
+
+            <section>
+                <img src="condala-images/sale.jpg" />
+                <p>Shopping cart</p>
+            </section>
+
+            <section>
+                <img src="condala-images/fridge.jpeg" />
+                <p>Fridge</p>
+            </section>
+        </div>
+    </div>
+
+    <div class="flash-sales">
+        <div class="flash-desc">
+            <h2> Flash Sales </h2>
+            <p id="show-time" onload="showTime()">
+                Time
+            </p>
+        </div>
+        <div class="flash-sections">
+            <div>
+                <small>-80%</small>
+                <img src="condala-images/gown.png" />
+                <span>Women's long gown</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+            </div>
+
+            <div>
+                <small>-80%</small>
+                <img src="condala-images/cardigan.png" />
+                <span>Men's Cardigan</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+            </div>
+
+            <div>
+                <small>-80%</small>
+                <img src="condala-images/shoe.jpg" />
+                <span>Men's shoe</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+            </div>
+
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/shirt.jpg" />
+                <span>Men's t-shirt</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+            </div>
+
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/fridge.jpeg" />
+                <span>Fridge</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+            </div>
+
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/shirt.jpg" />
+                <span>Men's t-shirt</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+            </div>
+
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/dress.jpg" />
+                <span>Women's dress</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+            </div>
+
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/tvset.png" />
+                <span>Tv set</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="candala">
+        <h2>Why Candala is the best </h2>
+        <div class="candala-benefits">
+            <div class="">
+
+                <img src="img3.jpg" />
+                <p>
+                    Free Shipping
+                </p>
+
+            </div>
+            <div class="">
+
+                <img src="img3.jpg" />
+                <p>
+                    Early Return
+                </p>
+
+            </div>
+            <div class="">
+
+                <img src="img3.jpg" />
+                <p>
+                    Authentic Products
+                </p>
+
+            </div>
+            <div class="">
+
+                <img src="img3.jpg" />
+                <p>
+                    Best Prices
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="advert-bar">
+
+        <span>Shop Now </span>
+
+        <h1> Black  Friday </h1>
+
+        <p>
+            Get up to 70%  Discount for any item you buy
+        </p>
+
+    </div>
+
+    <div class="featured-category">
+        <h2>Featured Categories </h2>
+        <div class="featured-sections">
+            <section>
+                <img src="condala-images/iphone.jpeg" />
+                <span>Phones</span>
+            </section>
+
+            <section>
+                <img src="condala-images/tvset.png" />
+                <span>Tvset</span>
+            </section>
+
+            <section>
+                <img src="condala-images/shoe.jpg" />
+                <span>Shoes</span>
+            </section>
+
+            <section>
+                <img src="condala-images/generator.jpg" />
+                <span>Generators</span>
+            </section>
+
+            <section>
+                <img src="condala-images/gown.png" />
+                <span>Gown</span>
+            </section>
+
+            <section>
+                <img src="condala-images/sale.jpg" />
+                <span>Shopping cart</span>
+            </section>
+
+            <section>
+                <img src="condala-images/fridge.jpeg" />
+                <span>Fridge</span>
+            </section>
+            <section>
+                <img src="condala-images/generator.jpg" />
+                <span>Generators</span>
+            </section>
+        </div>
+    </div>
+
+    <div class="super-deal">
+        <div class="deal">
+            <h2> Super Deals under 10k</h2>
+            <p class="show-all" id="see-all" onclick="seeAll()">
+                See all</p>
+        </div>
+
+        <div class="deal-sections">
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/gown.png" />
+                <span>Women's long gown</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/cardigan.png" />
+                <span>Men's Cardigan</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/shoe.jpg" />
+                <span>Men's shoe</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/dress.jpg" />
+                <span>women's dress</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <div class="see-all">
+
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/generator.jpg" />
+                <span>Generators</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/shirt.jpg" />
+                <span>Men's t-shirt</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/fridge.jpeg" />
+                <span>Fridge</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/shirt.jpg" />
+                <span>Men's t-shirt</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/dress.jpg" />
+                <span>Women's dress</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <small>-50%</small>
+                <img src="condala-images/tvset.png" />
+                <span>Television</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="top-brands">
+        <h2>Top Brands </h2>
+        <div class="top-images">
+
+            <img src="condala-images/dsn.png" />
+
+
+            <img src="condala-images/freecodecamp.jpg" />
+
+            <img src="condala-images/afowebdev.png" />
+
+            <img src="condala-images/logo1.png" />
+
+            <img src="condala-images/condala-main-logo.png" />
+
+        </div>
+    </div>
+
+    <div class="trending">
+        <div class="trend-desc">
+            <h2> Trending in Fashion</h2>
+            <p class="show-all" id="show-all" onclick="showall()">
+                See all
+            </p>
+        </div>
+        <div class="trend-sections">
+            <div>
+                <small class="heart">
+                    <svg class="icon" width="24" height="24" fill="none" stroke="currentColor" style="stroke-linejoin: round;stroke-linecap: round; " viewbox="0 0 32 32">
+                        <use xlink:href="#heart-icon"></use>
+                    </svg>
+                </small>
+                <img src="condala-images/gown.png" />
+                <span>Women's long gown</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <small class="heart">
+                    <svg class="icon" width="24" height="24" fill="none" stroke="currentColor" style="stroke-linejoin: round;stroke-linecap: round; " viewbox="0 0 32 32">
+                        <use xlink:href="#heart-icon"></use>
+                    </svg>
+                </small>
+                <img src="condala-images/cardigan.png" />
+                <span>Men's Cardigan</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <small class="heart">
+                    <svg class="icon" width="24" height="24" fill="none" stroke="currentColor" style="stroke-linejoin: round;stroke-linecap: round; " viewbox="0 0 32 32">
+                        <use xlink:href="#heart-icon"></use>
+                    </svg>
+                </small>
+                <img src="condala-images/shoe.jpg" />
+                <span>Men's shoe</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <small class="heart">
+                    <svg class="icon" width="24" height="24" fill="none" stroke="currentColor" style="stroke-linejoin: round;stroke-linecap: round; " viewbox="0 0 32 32">
+                        <use xlink:href="#heart-icon"></use>
+                    </svg>
+                </small>
+                <img src="condala-images/dress.jpg" />
+                <span>women's dress</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <small class="heart">
+                    <svg class="icon" width="24" height="24" fill="none" stroke="currentColor" style="stroke-linejoin: round;stroke-linecap: round; " viewbox="0 0 32 32">
+                        <use xlink:href="#heart-icon"></use>
+                    </svg>
+                </small>
+                <img src="condala-images/generator.jpg" />
+                <span>Generators</span>
+                <p>
+                    UGX   10,000
+                </p>
+                <s>UGX   17,000</s>
+                <section class="rating">
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                    <p>
+                        ★
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="website-info">
+        <h2>Online shopping in Uganda with us<span> Condala</span></h2>
+
+        <div class="info">
+            <p>
+                Shop with us and enjoy a lot of offers with us. Offers like 50% discount on goods above 10k,
+                free shipping on goods above 100k, buy one get one free on food items,
+                free installation on electronics, and many more offers . Condala is the best you can patronize,
+                we are here to offer great goods and services .
+            </p>
+            <p class="clear">
+                We are the best you can get can get from. We are here as customers of Condala.
+                We believe in providing our esteem customers with good and valuable products, goods and services.
+            </p>
+            <p id="more">
+                We are the best you can get can get from. We are here as customers of Condala. We believe in providing our esteem customers with good and valuable products, goods and services.
+            </p>
+        </div>
+        <div id="view-more" onclick="viewMore()">
+            <p>
+                View more
+            </p>
+            <span> &#10095;</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-text">
+            <h2>Get Special Offer </h2>
+            <p>
+                Subscribe to our newsletter and get job offer
+            </p>
+        </div>
+        <form method="Post" class="input">
+            <input type="email" placeholder="Enter Your Email" required="required" aria-required="true" />
+            <input type="submit" id="btn" value="Subscribe" />
+        </form>
+        <div class="radio">
+            <p>
+                <input type="radio" name="radio" value="male"> Male
+            </p>
+            <p>
+                <input type="radio" name="radio" value="female"> Female
+            </p>
+        </div>
+        <div class="about">
+            <div class="col">
+                <h2>Company</h2>
+                <p>
+                    Overview
+                </p>
+                <p>
+                    Pricing
+                </p>
+                <p>
+                    Enterprise
+                </p>
+                <p>
+                    Integration
+                </p>
+            </div>
+            <div class="col">
+                <h2>Purchase</h2>
+                <p>
+                    Overview
+                </p>
+                <p>
+                    Pricing
+                </p>
+                <p>
+                    Enterprise
+                </p>
+                <p>
+                    Integration
+                </p>
+            </div>
+            <div class="col">
+                <h2>Education</h2>
+                <p>
+                    Overview
+                </p>
+                <p>
+                    Pricing
+                </p>
+                <p>
+                    Enterprise
+                </p>
+                <p>
+                    Integration
+                </p>
+            </div>
+            <div class="col">
+                <h2>More info</h2>
+                <p>
+                    Overview
+                </p>
+                <p>
+                    Pricing
+                </p>
+                <p>
+                    Enterprise
+                </p>
+                <p>
+                    Integration
+                </p>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>Connect with us</h2>
+            <div>
+                <span style="color: blue; margin-left:0; width:20px; height: 30px;"> f </span>
+                <span>
+                    <svg viewBox="0 0 50 50" width="20" fill="red" height="20">
+                        <path d="M23.4 46.9c-12.5 0-23-10.2-23-22.7s10.5-22.7 23-22.7c6.9 0 11.9 2.7 15.6 6.3l-4.4 4.4c-2.7-2.5-6.3-4.4-11.2-4.4C14.2 7.7 7.1 15 7.1 24.2c0 9.1 7.1 16.5 16.3 16.5 5.9 0 9.3-2.4 11.5-4.5 1.8-1.8 2.9-4.3 3.4-7.8H23.5v-6.2h20.7c.2 1.1.3 2.4.3 3.9 0 4.7-1.3 10.4-5.4 14.5-3.9 4.1-9 6.3-15.7 6.3z"></path>
+                    </svg>
+                </span>
+                <span>
+
+                    <svg viewBox="328 355 335 276" style="display: block; width: 20; height: 20; " xmlns="http://www.w3.org/2000/svg">
+                        <path d="
+                            M 630, 425
+                            A 195, 195 0 0 1 331, 600
+                            A 142, 142 0 0 0 428, 570
+                            A 70, 70 0 0 1 370, 523
+                            A 70, 70 0 0 0 401, 521
+                            A 70, 70 0 0 1 344, 455
+                            A 70, 70 0 0 0 372, 460
+                            A 70, 70 0 0 1 354, 370
+                            A 195, 195 0 0 0 495, 442
+                            A 67, 67 0 0 1 611, 380
+                            A 117, 117 0 0 0 654, 363
+                            A 65, 65 0 0 1 623, 401
+                            A 117, 117 0 0 0 662, 390
+                            A 65, 65 0 0 1 630, 425
+                            Z"
+                            style="fill:#3BA9EE;" />
+                    </svg>
+
+                </span>
+            </div>
+            <p>
+                Need help? Live chat or call : <a href="tel:0702778224">0702778224</a>
+            </p>
+        </div>
+        <div class="guarantee">
+            <h2> Shop with confidence</h2>
+            <p>
+                100% search and trusted shopping
+            </p>
+        </div>
+        <div class="disc">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="download">
+            <h2> Download Our App </h2>
+            <div class="download-label">
+                <div class="app">
+                    <img src="condala-images/app.png" />
+                    <h3>download on the App store </h3>
+                </div>
+                <div class="app">
+                    <img src="condala-images/apple.png" />
+                    <h3>Get it on Google Play </h3>
+                </div>
+            </div>
+        </div>
+        <p id="copyright">
+            &copy;Copyright @ 2021 Condala. All rights reserved.
+        </p>
+    </div>
+
+
+    <!-- Scripts -->
+
+    <script src="condala.js" type="text/javascript">
+    </script>
+
+    <script src="condala-slider.js" type="text/javascript">
+    </script>
+
+</body>
+
+</html>
