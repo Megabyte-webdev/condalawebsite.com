@@ -405,7 +405,7 @@ img.logo {
     color: purple;
     margin: 5px 10px;
     font-style: italic;
-    font-size: calc(1vmax + .8rem);
+    font-size: 2rem;
     word-spacing: 1px;
     letter-spacing: 1px;
     text-transform: uppercase;
